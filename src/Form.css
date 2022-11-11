@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    background-color: #e7e9ef;
+    width: 30em;
+    height: 35em;;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156,156,156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+input {
+
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 1rem 1.75rem;
+    margin: 1rem;
+    width: 90%;
+    border: 0;
+    display: flex;
+
+}
+
+
+button {
+   background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+   justify-content: center;
+   cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem 1.75rem;
+    font-size: 16px;
+    margin: 1rem;
+    width: 90%;
+    border: 0;
+    display: flex;
+}
+
+button:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+@media (min-width: 768px) {
+    button,input {
+        padding: 1rem 2rem;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+
+li::before {
+    content: "• ";
+    color: red; /* or whatever color you prefer */
+}
